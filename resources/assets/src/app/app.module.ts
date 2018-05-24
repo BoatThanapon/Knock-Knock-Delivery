@@ -8,6 +8,7 @@ import { AppRoutingModule }     from './app-routing.module';
 import { AppComponent }         from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardService } from './providers/dashboard.service';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { DashboardService } from './providers/dashboard.service';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    AboutusComponent
   ],
   providers: [ 
     DashboardService

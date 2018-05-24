@@ -14,13 +14,13 @@ export class DashboardComponent implements OnInit {
 	constructor(private _dashboardService: DashboardService) { }
 
 	ngOnInit() {
-		this._dashboardService.listOfAllUsers().then((res: any) => {
-			if (res.success) {
-				this.userList = res.data;		
-			} else {
-				console.log("There is some problem");
-			}
-	    });
+		// this._dashboardService.listOfAllUsers().then((res: any) => {
+		// 	if (res.success) {
+		// 		this.userList = res.data;		
+		// 	} else {
+		// 		console.log("There is some problem");
+		// 	}
+	    // });
 	}
 
 }

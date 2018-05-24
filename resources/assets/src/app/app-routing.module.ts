@@ -2,13 +2,17 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent }   from './dashboard/dashboard.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+
 
 const routes: Routes = [
   { path: 'login', loadChildren: './auth/login/login.module#LoginModule' },
   { path: 'forgot', loadChildren: './auth/forgot/forgot.module#ForgotModule' },
   { path: 'reset', loadChildren: './auth/reset/reset.module#ResetModule' },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard',  component: DashboardComponent }
+  { path: 'dashboard',  component: DashboardComponent },
+  { path: 'aboutus',  component: AboutusComponent }
+
 ];
 
 @NgModule({
