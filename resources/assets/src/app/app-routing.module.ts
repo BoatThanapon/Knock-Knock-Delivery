@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { RegisterComponent } from './auth/register/register.component';
+
 
 
 const routes: Routes = [
@@ -11,7 +13,9 @@ const routes: Routes = [
   { path: 'reset', loadChildren: './auth/reset/reset.module#ResetModule' },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
-  { path: 'aboutus',  component: AboutusComponent }
+  { path: 'aboutus',  component: AboutusComponent },
+  { path: 'register',  component: RegisterComponent }
+
 
 ];
 
