@@ -9,6 +9,7 @@ import { AppComponent }         from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardService } from './providers/dashboard.service';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    AboutusComponent
+    AboutusComponent,
+    RegisterComponent
   ],
   providers: [ 
     DashboardService
